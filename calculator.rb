@@ -23,6 +23,12 @@ while response != "done" || response != "exit"
     puts "Give me another number"
     num2 = gets.chomp.to_i
     puts "Let me see... #{num1} * #{num2} is #{num1 * num2}."
+  elsif response == "divide" || response == "/"
+    puts "Give me a number"
+    num1 = gets.chomp.to_i
+    puts "Give me another number"
+    num2 = gets.chomp.to_i
+    puts "Let me see... #{num1} / #{num2} is #{num1 / num2}."
   elsif response == "done" || response == "exit"
     exit
   else
