@@ -1,14 +1,14 @@
-while true 
+while true
   puts "Hello, I'm a calculator! Please add or subtract numbers in one line with spaces."
 
   response = gets.chomp.split
 
   answer = 0
-  
+
   if response.include?("add") || response.include?("+")
     response.each do |string|
       if string.to_i != 0
-        answer = string.to_i + answer 
+        answer = string.to_i + answer
       end
     end
   elsif response.include?("subtract") || response.include?("-")
